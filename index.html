@@ -32,34 +32,75 @@
           }
           .mdl-card__title
           {
-              height: ;
+              height: 160px;
               background:url("https://writeitdown31days.files.wordpress.com/2015/12/hello-picture.gif");
+          }
+          .demo-layout-transparent {
+              background: url('https://www.planwallpaper.com/static/images/general-night-golden-gate-bridge-hd-wallpapers-golden-gate-bridge-wallpaper.jpg') center / cover;
+          }
+          .demo-layout-transparent .mdl-layout__header,
+          .demo-layout-transparent .mdl-layout__drawer-button {
+              /* This background is dark, so we set text to white. Use 87% black instead if
+                 your background is light. */
+              color: white;
           }
       </style>
   </head>
 
   <body>
-  <center>
-  <div class="demo-card-wide mdl-card mdl-shadow--2dp margetop" >
-      <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Carte de présentation</h2>
+
+
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+          <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">Title</span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation -->
+              <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="">Link</a>
+                  <a class="mdl-navigation__link" href="">Link</a>
+                  <a class="mdl-navigation__link" href="">Link</a>
+                  <a class="mdl-navigation__link" href="">Link</a>
+              </nav>
+          </div>
+      </header>
+      <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">Title</span>
+          <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+          </nav>
       </div>
-      <div class="mdl-card__supporting-text">
-          Bonjour, ceci est une simple carte qui suit les
-          guidlines material.
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              Continuer l'exploration du site
-          </a>
-      </div>
-      <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-              <i class="material-icons">share</i>
-          </button>
-      </div>
+      <main class="mdl-layout__content">
+          <center>
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp margetop" >
+                  <div class="mdl-card__title">
+                      <h2 class="mdl-card__title-text">Carte de présentation</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                      Bonjour, ceci est une simple carte qui suit les
+                      guidlines material.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                          Continuer l'exploration du site
+                      </a>
+                  </div>
+                  <div class="mdl-card__menu">
+                      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                          <i class="material-icons">share</i>
+                      </button>
+                  </div>
+              </div>
+          </center>
+      </main>
   </div>
-  </center>
+
+
 
 
   </body>
